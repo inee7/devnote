@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "b35975aa9dad6a49",
+    "type": "split",
+    "children": [
+      {
+        "id": "2407f35d9f9dc697",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "28f573be56a42623",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "무제 파일 1.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8bf0fdf8fa67d7d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "2eb5f5e5bfd09d27",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86e3b46be75ed466",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cff7aeb3708894e0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "458da6ce922435b0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "86c8511a1845fa2a",
+    "type": "split",
+    "children": [
+      {
+        "id": "704cce6cabc4517d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9085ace377432ae8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "무제 파일 1.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6120e1c9a612d20c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "무제 파일 1.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b277cda927032121",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8f3a70dcdfba4470",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "무제 파일 1.canvas"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "28f573be56a42623",
+  "lastOpenFiles": [
+    "무제 파일 1.canvas",
+    "jpa/entitymanager 모방코드.md",
+    "무제 파일.canvas",
+    "jpa/연관관계.md",
+    "2024-07-30.md",
+    "jpa/JPA원리.md",
+    "jpa/Lock.md",
+    "jpa/OSIV.md",
+    "jpa/영속성컨텍스트.md",
+    "jpa/sql 로그 남기기.md",
+    "jpa/spring-data-jpa.md",
+    "jpa/querydsl.md",
+    "jpa/@Convert 쓸때 List면 주의 할 점.md"
+  ]
+}
