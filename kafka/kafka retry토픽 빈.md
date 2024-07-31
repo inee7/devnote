@@ -20,4 +20,3 @@ public RetryTopicConfiguration findRetryConfigurationFor(String[] topics, Method
 NewTopic을 빈으로 만드는건데 이건 스프링에서 브로커에 자동으로 만들게 할때 쓰는데 카프카 설정으로 auto create 꺼져있으면 의미 없다 
 
 
-#dev/kafka
