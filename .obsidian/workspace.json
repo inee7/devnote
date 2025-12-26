@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "95a6b87879cd4a6f",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd37784c21d41ffe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "640b2e9b72a945de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "단위 테스트에 대해 우리가 잘못 알고 있는 5가지 진실.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "단위 테스트에 대해 우리가 잘못 알고 있는 5가지 진실"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "61564f690f9d0445",
+    "type": "split",
+    "children": [
+      {
+        "id": "64f2f0e4932d762d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "01816f5c5a68bf86",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "e5e2479269bc8c49",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:jpa",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "6469f004c927a7e9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2f467f6ee40034a5",
+    "type": "split",
+    "children": [
+      {
+        "id": "353c1d2ca7742a76",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d942ece15a29be0f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "백링크"
+            }
+          },
+          {
+            "id": "b3f1460524e10d18",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "스프링/@ConfigurationProperties.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "@ConfigurationProperties 의 나가는 링크"
+            }
+          },
+          {
+            "id": "a38d9cc9a175c5f2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "f460e81af42fb2e1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "스프링/@ConfigurationProperties.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "@ConfigurationProperties 의 개요"
+            }
+          },
+          {
+            "id": "3763d5c5799522d9",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "copilot-chat-view"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:새 베이스 생성하기": false,
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "copilot:Open Copilot Chat": false
+    }
+  },
+  "active": "640b2e9b72a945de",
+  "lastOpenFiles": [
+    "좋은 단위테스트.md",
+    "테스트의 종류.md",
+    "JPA 성능최적화.md",
+    "영속성컨텍스트.md",
+    "sql 로그 남기기.md",
+    "OSIV.md",
+    "JPA원리.md",
+    "코틀린 레일웨이 프로그래밍.md",
+    "DDD란 무엇인가.md",
+    "DDD_WHAT_WHY.md",
+    "일대일.md",
+    "GC 종류.md",
+    "GC 과정.md",
+    "Full GC 잦을때.md",
+    "domain 에서 프레임워크 의존을 제거할 수 있을까.md",
+    "DDD 도에인에서 프레임워크 의존성 분리 할 수 있을까?.md",
+    "코틀린에서 상수는.md",
+    "무인자생성자 없어도 역직렬화.md",
+    "Sealed Class (enum의 제약보완).md",
+    "kotlin_data_class_jackson_serialization.md",
+    "kotlin_data_class 역직렬화.md",
+    "kotlin jackson 2.10.1이상 isXX.md",
+    "LIKE 조심.md",
+    "entitymanager 모방코드.md",
+    "@Transactional.md",
+    "@Modifying.md",
+    "이미지/domain-framework-dependency/R800x0.jpg",
+    "이미지/domain-framework-dependency/img.png",
+    "이미지/domain-framework-dependency/img_5.png",
+    "이미지/domain-framework-dependency/img_4.png",
+    "이미지/domain-framework-dependency/img_3.png",
+    "이미지/domain-framework-dependency/img_2.png",
+    "이미지/domain-framework-dependency",
+    "링크모음/ddd/domain 에서 프레임워크 의존을 제거할 수 있을까/img.png",
+    "무제 1.base",
+    "무제.base",
+    "이미지/Scope Function run, with, let, apply, also/GmkGaOn.jpg",
+    "이미지/Scope Function run, with, let, apply, also/url.png",
+    "이미지/Untitled 1.png",
+    "컨퍼런스",
+    "책/내코드가그렇게이상한가요/6. 조건분기",
+    "책/내코드가그렇게이상한가요/1.3 로직과 떨어진 데이터 클래스",
+    "책/코틀린인액션",
+    "책/이펙티브코틀린",
+    "책/요즘우아한개발",
+    "책/내코드가그렇게이상한가요",
+    "무제.canvas",
+    "무제 1.canvas"
+  ]
+}
