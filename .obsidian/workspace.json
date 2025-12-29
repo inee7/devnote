@@ -11,10 +11,14 @@
             "id": "04695e8879fb92b8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "notes/1.3 로직과 떨어진 데이터 클래스.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "1.3 로직과 떨어진 데이터 클래스"
             }
           }
         ]
@@ -178,6 +182,10 @@
   },
   "active": "04695e8879fb92b8",
   "lastOpenFiles": [
+    "notes/6. 조건분기.md",
+    "notes/7. 컬렉션.md",
+    "notes/8. 결합.md",
+    "notes/Spring Boot 테스트 전략과 테스트 더블.md",
     "resources/images/conditional-branching-example.jpg",
     "resources/images/kotlin-value-class-compiled.png",
     "resources/images/kotlin-jvminline-value-class.png",
@@ -195,15 +203,12 @@
     "notes/testing.md",
     "notes/Translate to Chinese.md",
     "notes/val을 var로 오버라이드 가능.md",
-    "resources/images/gc-area.png",
     "notes/Generate table of contents.md",
     "notes/GC 종류.md",
     "notes/gc.md",
     "notes/스프링이벤트.md",
     "notes/백엔드.md",
     "notes/단일 책임 원칙.md",
-    "notes/8. 결합.md",
-    "notes/7. 컬렉션.md",
     "notes/5장. 응집도.md",
     "notes/내 코드가 그렇게 이상한가요.md",
     "notes/게터는 스마트캐스트 할 수 없다.md",
@@ -213,7 +218,6 @@
     "notes/멀티모듈 구성하면서 배운점.md",
     "notes/1.3 로직과 떨어진 데이터 클래스.md",
     "notes/3.2 성숙한 클래스로 성장시키기.md",
-    "notes/대용량 CUD시 주의 (checkpoint age).md",
     "무제.canvas",
     "무제.base",
     "무제 1.base",
