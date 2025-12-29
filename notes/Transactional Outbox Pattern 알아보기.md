@@ -1,6 +1,6 @@
 # Transactional Outbox Pattern 알아보기
 #kafka #이벤트
-![](image.png)
+![[resources/images/transactional-outbox-01.png]]
 
 *메시지를 DB 트랜잭션과 묶어서 커밋하여 비동기적으로 메시지 브로커에게 전달하는 패턴*
 
@@ -16,11 +16,11 @@
 
 우리가 개발하는 서비스는 보통 DB를 업데이트하는 트랜잭션과 함께 메시지를 발행합니다. 이 때 DB를 업데이트와 메시지 전송을 한 트랜잭션으로 묶지 않으면 문제가 발생합니다. 이 두 작업은 하나의 애플리케이션 서비스 내에서 원자적으로 수행되지 않으면 시스템이 실패할 경우 문제가 발생하게 되는 것입니다.
 
-![](image_2.png)
-
 [2PC(two-phase commit)](https://ebrary.net/64872/computer_science/introduction_phase_commit) 
 
 기존에는 이 원자성을 보장하기 위해 분산 트랜잭션을 사용했습니다. 분산 트랜잭션은 [2PC(two-phase commit, 2단계 커밋)](https://github.com/eastperson/TIL/blob/main/Database/2PC(two-phase%20commit).md)을 이용하여 트랜잭션 참여자가 커밋 혹은 롤백을 할 수 있도록 원자성을 보장하는 방법입니다. 분산 트랜잭션은 단일 db에 비해서 10배 이상의 성능 저하가 발생할 수 있습니다. 또한 동기 IPC(Inter-Process Communication) 형태라 가용성이 떨어지는 문제가 있습니다. 현대의 아키텍처는 일관성보다 가용성을 우선시하고 있습니다. 이러한 이유로 분산 트랜잭션 방식은 현대 애플리케이션과 맞지 않으며 최신 메시지 브로커(카프카 등)는 기능 자체를 지원하지 않습니다.
+
+![[resources/images/transactional-outbox-02.png]]
 
 우리는 다음 2가지를 보장해야합니다.
 
@@ -34,10 +34,10 @@
 
 애플리케이션은 데이터베이스의 outbox 테이블에 메시지 내용을 저장합니다. 다른 애플리케이션이나 프로세스는 outbox 테이블에서 데이터를 읽고 해당 데이터를 사용하여 작업을 수행할 수 있습니다. 실패시 완료될 때까지 다시 시도할 수 있습니다. 따라서 outbox pattern은 적어도 한 번 이상(at-least once) 메시지가 성공적으로 전송되었는지 확인할 수 있습니다.
 
-![](image_3.png) ![](image_4.png) [https://en.wikipedia.org/wiki/Inbox_and_outbox_pattern](https://en.wikipedia.org/wiki/Inbox_and_outbox_pattern) 
+![[resources/images/transactional-outbox-03.png]] ![[resources/images/transactional-outbox-04.png]] [https://en.wikipedia.org/wiki/Inbox_and_outbox_pattern](https://en.wikipedia.org/wiki/Inbox_and_outbox_pattern) 
 
-여기서 outbox는 ‘보낼 편지함’이라는 뜻이 있습니다. 전송되지 않았거나 전송에 실패한 메시지들이 모여있는 보관함이라는 뜻입니다. 메시지를 보낼 데이터를 저장하는 저장소를 따로 두는 것이죠. 이제는 크리스 리처드슨(Chris Richardson’s)의 [microservices.io](http://microservices.io) 에서 정의하는 아웃박스 패턴을 보겠습니다.
-![](image_5.png)
+여기서 outbox는 '보낼 편지함'이라는 뜻이 있습니다. 전송되지 않았거나 전송에 실패한 메시지들이 모여있는 보관함이라는 뜻입니다. 메시지를 보낼 데이터를 저장하는 저장소를 따로 두는 것이죠. 이제는 크리스 리처드슨(Chris Richardson's)의 [microservices.io](http://microservices.io) 에서 정의하는 아웃박스 패턴을 보겠습니다.
+![[resources/images/transactional-outbox-05.png]]
 
 이 패턴의 구성요소는 다음과 같습니다.
 
@@ -53,7 +53,7 @@
 
 RDBMS를 사용하는 애플리케이션에서 outbox 테이블에 삽입된 메시지를 발행하는 간단한 방법으로 테이블을 폴링해서 미발행된 메시지를 조회하는 것입니다. 메시지 릴레이는 이렇게 조회한 메시지를 하나씩 각자의 목적지 채널로 보내서 메시지 브로커에 발행합니다. 그리고 나중에 outbox 테이블에서 메시지를 삭제합니다.
 
-![](image_6.png)
+![](resources/images/transactional-outbox-06.png)
 [https://krishnakrmahto.com/transactional-messaging-in-microservices](https://krishnakrmahto.com/transactional-messaging-in-microservices)
 
 DB 폴링은 규모가 작을 경우 쓸 수 있는 쉬운 방법입니다. 하지만 DB를 자주 폴링하면 비용이 발생하고 NoSQL DB는 쿼리 능력에 따라 사용 가능 여부가 결정됩니다.
@@ -61,7 +61,7 @@ DB 폴링은 규모가 작을 경우 쓸 수 있는 쉬운 방법입니다. 하�
 ## 트랜잭션 로그 테일링 패턴(Transaction log tailing Pattern)
 
 메시지 릴레이로 DB 트랜잭션 로그(커밋 로그)를 테일링(tailing)하는 방법입니다. 애플리케이션에서 커밋된 업데이트는 각 DB의 트랜잭션 로그 항목(log entry, 로그 엔트리)으로 남습니다. 트랜잭션 로그 마이너(transaction log miner)로 트랜잭션 로그를 읽어 변경분을 하나씩 메시지로 메시지 브로커에 발행하는 방법입니다.
-![](image_7.png)
+![](resources/images/transactional-outbox-07.png)
 [https://microservices.io/patterns/data/transaction-log-tailing.html](https://microservices.io/patterns/data/transaction-log-tailing.html)
 
 트랜잭션 로그 마이너는 트랜잭션 로그 항목을 읽고 삽입된 메시지에 대응되는 각 로그 항목을 메시지로 전환하여 메시지 브로커에 발행합니다. RDBMS의 outbox 테이블에 출력된 메시지 또는 NoSQL DB에 레코드에 추가된 메시지를 발행할 수 있습니다.
@@ -72,7 +72,7 @@ mysql의 경우 mysqlbinlog, PostgreSQL WAL, Oracle redolog 등을 활용하여 
 
 Kafka-Connect는 Kafka 브로커 외에 별도의 서비스로 실행됩니다. 아래의 그림에서는 Postgres 데이터 베이스를 사용하였는고 엔티티 업데이트가 발생할 때 oubox 테이블에 레코드를 추가하는 모습입니다. Kafka-Connect 는 런타임시점에서 데이터베이스의 변경사항을 캡쳐하기 위해 Debezium 커넥터가 배포됩니다. Debezium 커넥터는 outbox 테이블에서 데이터베이스 트랜잭션 로그(write ahead log)를 추적하고 사용자 정의 커넥터에 의해 정의된 토픽에 메시지를 발행합니다.
 
-![](image_8.png)
+![](resources/images/transactional-outbox-08.png)
 [https://dzone.com/articles/implementing-the-outbox-pattern](https://dzone.com/articles/implementing-the-outbox-pattern)
 
 이 방법은 적어도 한 번(at-least once) 전달을 보장합니다. 커넥터가 다운되고 시작될 때 동일한 이벤트를 여러 번 게시할 때가 있습니다. 따라서 consumer는 멱등성 상태여야 하며 중복 이벤트가 다시 처리되지 않도록 해야합니다.

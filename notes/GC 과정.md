@@ -11,7 +11,7 @@ Garbage Collection 이라고 하면 garbage 들을 수집할 것 같지만 실�
 JAVA8부터는 perm영역이 metaspace영역으로 바꼈음
 
 
-![](gc영역.png)
+![[resources/images/gc-area.png]]
 
 ### GC 프로세스
 1. 새로운 오브젝트는 Eden 영역에 할당된다. 두개의 Survivor Space 는 비워진 상태로 시작한다.

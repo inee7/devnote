@@ -50,7 +50,7 @@ Kafka는 여러 구성 요소가 계층적으로 결합된 구조입니다.
 Kafka에서 메시지는 다음 흐름을 따릅니다.
 
 ### 3-1. Producer
-![[kafka_프로듀서.png]]
+![[resources/images/kafka_프로듀서.png]]
 - 메시지를 Kafka(파티션선택하여)에 전송  
 - **Topic, Value**는 필수 / **Key, Partition**은 선택  
 
@@ -77,7 +77,7 @@ Kafka에서 메시지는 다음 흐름을 따릅니다.
 ### 3-2. Partition & Segment
 
 #### Partition
-![[kafka_토픽파티션.png]]![]()
+![[resources/images/kafka_토픽파티션.png]]
 - Topic을 병렬 처리 단위로 나눈 구조  
 - 병렬성과 처리량을 높이기 위한 핵심 구성  
 - **주의**: Partition 수는 줄일 수 없으며 초기 설정 중요  
@@ -86,14 +86,14 @@ Kafka에서 메시지는 다음 흐름을 따릅니다.
 > Key 기반 전송 시 Partition 수 변경에 주의 (Hash 충돌)
 
 #### Segment
-![[kafka_세그먼트.png]]
+![[resources/images/kafka_세그먼트.png]]
 - Partition 내부의 실제 저장 단위 (로그 파일)  
 - 디스크 경로 예: `/data/kafka-logs/{topic}-{partition}/`
 
 ---
 
 ### 3-3. Consumer
-![[kafka_컨슈머.png]]
+![[resources/images/kafka_컨슈머.png]]
 - Kafka는 **Pull 방식** (컨슈머가 직접 메시지 읽음)  
 - Offset을 기반으로 메시지 위치 추적  
 - **Consumer Group**으로 묶어 병렬 소비 가능  
@@ -139,7 +139,7 @@ Kafka는 성능 최적화를 위해 메시지를 압축할 수 있습니다.
 ---
 
 ### 4-3. 페이지 캐시(Page Cache)
-* ![](kafka_페이지캐시.png)
+![[resources/images/kafka_페이지캐시.png]]
 - Kafka는 디스크 직접 I/O 대신 **OS의 Page Cache**를 활용  
 - 디스크 I/O를 줄이고 메시지 처리 성능 향상  
 
