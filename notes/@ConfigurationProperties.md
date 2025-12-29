@@ -1,39 +1,34 @@
+---
+tags: [spring, spring-boot, configuration]
+---
+
 # @ConfigurationProperties
 
-**설정파일의 값을 객체로 바인딩 가능하게 해주는 애노테이션**
+## 한 줄 요약
 
-`@ConfigurationProperties`는 특정 프리픽스(prefix)를 기준으로 매핑
+Spring Boot에서 설정 파일(yml/properties)의 값을 타입 안전하게 객체로 바인딩하는 애노테이션
+
+## 핵심 정리
+
+- prefix 기반으로 설정 값을 객체 필드에 자동 매핑
+- Bean으로 등록 필요 (`@Component` 또는 `@EnableConfigurationProperties`)
+- 복잡한 객체, 리스트, 중첩 구조도 바인딩 가능
+- JSR-303 유효성 검증 지원
+- Spring Boot 2.2부터 생성자 바인딩 지원, 3.0부터는 `@ConstructorBinding` 생략 가능
+
+## 상세 내용
+
+### 기본 사용법
 
 ```java
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
-
 @Component
 @ConfigurationProperties(prefix = "app")
 public class AppProperties {
     private String name;
     private int version;
-
     // Getters and Setters
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getVersion() {
-        return version;
-    }
-
-    public void setVersion(int version) {
-        this.version = version;
-    }
 }
 ```
-
-**설정 파일 예시:**
 
 ```yaml
 app:
@@ -41,99 +36,108 @@ app:
   version: 1
 ```
 
-`@ConfigurationProperties` 는 bean이 되어야한다
-`@Componenet`로 bean이 되거나 `@EnableConfigurationProperties(AppProperties.class)`
+### Bean 등록 방법
 
+**방법 1: @Component 사용**
 ```java
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
-
-@Configuration
-@EnableConfigurationProperties(AppProperties.class)
-public class AppConfig {
-}
+@Component
+@ConfigurationProperties(prefix = "app")
+public class AppProperties { }
 ```
 
-springboot 2.1 까지는 기본생성자와 setter를 통해 주입되었다
-2.2부터 `@ConstructorBinding`를 통해 생성자로 주입 가능해졌다
+**방법 2: @EnableConfigurationProperties 사용**
+```java
+@Configuration
+@EnableConfigurationProperties(AppProperties.class)
+public class AppConfig { }
+```
+
+### 생성자 바인딩
+
+**Spring Boot 2.1 이하**
+- 기본 생성자 + setter 방식만 지원
+
+**Spring Boot 2.2 ~ 2.x**
 ```java
 @ConstructorBinding
 @ConfigurationProperties("config.person")
-@RequiredArgsConstructor @ToString
+@RequiredArgsConstructor
 public class Person {
     private final String name;
     private final int age;
 }
 ```
 
-3.0부터는 @Target이 생성자와 애노테이션에만 붙일수 있게 바꼈다 
+**Spring Boot 3.0 이상**
+- `@ConstructorBinding`을 생성자 또는 클래스에 선언
+- 생성자가 하나만 있으면 `@ConstructorBinding` 생략 가능 (Lombok `@RequiredArgsConstructor`와 함께 사용 시 편리)
+
 ```java
 @ConfigurationProperties("config.person")
-@ToString
-public class Person {
-    private final String name;
-    private final int age;
-
-    @ConstructorBinding
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-}
-```
-
-그런데 @Autowired처럼 생략가능하게 되어서 생성자만 있어도 `@ConstructorBinding`없이 사용가능
-```java
-@ConfigurationProperties("config.person")
-@RequiredArgsConstructor @ToString
+@RequiredArgsConstructor
 public class Person {
     private final String name;
     private final int age;
 }
 ```
 
-`@ConfigurationProperties`는 다양한 타입을 바인딩할 수 있습니다. 기본적인 타입(String, int, boolean 등)뿐만 아니라, 복잡한 객체나 리스트도 바인딩할 수 있습니다.
+### 복잡한 타입 바인딩
 
 ```java
 @ConfigurationProperties(prefix = "app")
 public class AppProperties {
-    private String name;
-    private int version;
     private List<String> servers;
-
-    // Getters and Setters
+    private Map<String, String> metadata;
 }
 ```
-
-**설정 파일 예시:**
 
 ```yaml
 app:
-  name: MyApp
-  version: 1
   servers:
     - server1.example.com
     - server2.example.com
+  metadata:
+    env: production
+    region: kr
 ```
 
-이 경우, `servers` 리스트는 설정 파일의 `servers` 항목을 그대로 반영하게 됩니다.
+### 유효성 검증
 
-`@ConfigurationProperties`와 함께 Spring의 `JSR-303/JSR-380` 표준 애너테이션(`@NotNull`, `@Min`, `@Max`, `@Pattern` 등)을 사용하여 바인딩된 프로퍼티에 대한 유효성 검사를 할 수 있습니다.
 ```java
-import javax.validation.constraints.NotNull;
-
 @ConfigurationProperties(prefix = "app")
+@Validated
 public class AppProperties {
-
     @NotNull
     private String name;
 
+    @Min(1)
+    @Max(100)
     private int version;
-
-    // Getters and Setters
 }
 ```
 
-이 경우, `app.name`이 설정 파일에 누락되어 있거나 `null`일 경우 애플리케이션이 시작되지 않고 오류가 발생합니다.
+설정 파일에 유효하지 않은 값이 있으면 애플리케이션 시작 시 예외 발생
 
-#spring 
+## 실무 적용
+
+### @Value vs @ConfigurationProperties
+
+- **@Value**: 단일 값 주입에 적합, SpEL 표현식 사용 가능
+- **@ConfigurationProperties**:
+  - 여러 관련 설정을 그룹화할 때 유리
+  - 타입 안전성 보장
+  - 자동완성 및 IDE 지원 (spring-boot-configuration-processor 의존성 추가 시)
+  - 유효성 검증 가능
+
+### 주의사항
+
+- 불변 객체로 만들고 싶다면 생성자 바인딩 + final 필드 조합 사용
+- setter 방식은 런타임에 값이 변경될 수 있으므로 불변성이 필요하면 생성자 바인딩 권장
+- `spring-boot-configuration-processor` 의존성 추가 시 IDE에서 자동완성 지원
+
+## 관련 노트
+
+- [[스프링부트와 스프링프레임워크 관계]]
+- [[@Profile 쓰지 말고 Property로 제어하는 방법]]
+
+#spring #configuration
