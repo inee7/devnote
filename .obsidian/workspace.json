@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GEMINI.md",
+                "file": "notes/OSIV.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GEMINI"
+              "title": "OSIV"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"일급 컬렉션\"",
+                "query": "#jpa",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "북마크"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -182,33 +183,34 @@
   },
   "active": "0177aad870cb7680",
   "lastOpenFiles": [
-    "notes/단일-책임-원칙.md",
-    "단일-책임-원칙.md",
-    "로직과 떨어진 데이터 클래스.md",
-    "hubs/oop.md",
-    "hubs/kotlin.md",
-    "notes/성숙한-클래스-설계.md",
-    "notes/내코드가그렇게이상한가요.md",
+    "hubs/디자인패턴.md",
+    "notes/디자인패턴-합성.md",
+    "notes/디자인패턴-브리지.md",
+    "notes/디자인패턴-반복자.md",
+    "notes/디자인패턴-상태.md",
+    "notes/디자인패턴-책임-사슬.md",
+    "notes/디자인패턴-해석기.md",
+    "notes/디자인패턴-중개인.md",
+    "notes/디자인패턴-기억.md",
+    "notes/디자인패턴-방문자.md",
+    "notes/디자인패턴-템플릿-메서드.md",
+    "notes/디자인패턴-관찰자.md",
+    "notes/디자인패턴-팩토리-메서드.md",
+    "notes/디자인패턴-싱글톤.md",
+    "notes/디자인패턴-추상-팩토리.md",
+    "notes/디자인패턴-빌더.md",
+    "notes/JPA원리.md",
+    "notes/영속성컨텍스트.md",
+    "notes/JPA 성능최적화.md",
+    "notes/디자인패턴-프로토타입.md",
+    "notes/디자인패턴-어댑터.md",
+    "notes/spring.md",
+    "notes/디자인패턴-퍼사드.md",
+    "notes/카프카 궁금증.md",
+    "notes/디자인패턴-전략.md",
+    "notes/최범균주니어.md",
+    "resources/images/observer-pattern-05.png",
     "hubs",
-    "notes/단일 책임 원칙.md",
-    "notes/구글 프롬프트 엔지니어링 백서.md",
-    "notes/결합도와-단일-책임.md",
-    "notes/게터는 스마트캐스트 할 수 없다.md",
-    "notes/Translate to Chinese.md",
-    "notes/Rewrite as tweet thread.md",
-    "notes/Rewrite as tweet.md",
-    "notes/kotlin_data_class 역직렬화.md",
-    "notes/Int.() - Unit 과 Int - Unit 차이.md",
-    "notes/finally close - use 로 간단히.md",
-    "notes/Generate glossary.md",
-    "notes/Fix grammar and spelling.md",
-    "notes/entitymanager 모방코드.md",
-    "notes/Explain like I am 5.md",
-    "notes/테스트의 종류.md",
-    "notes/Emojify.md",
-    "notes/테스트더블.md",
-    "notes/클로저란.md",
-    "notes/클로드 mcp에서 skills로.md",
     "무제.base",
     "무제 1.base",
     "inbox",
@@ -224,7 +226,6 @@
     "resources/images/Untitled.png",
     "resources/images/kafka-partition.png",
     "resources/images/domain-framework-dependency-02.png",
-    "resources/images/domain-framework-dependency-05.png",
     "notes",
     "resources/이미지/옵져버패턴",
     "resources/이미지/domain-framework-dependency",
