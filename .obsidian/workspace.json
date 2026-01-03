@@ -182,6 +182,7 @@
   },
   "active": "0177aad870cb7680",
   "lastOpenFiles": [
+    "notes/테스트-작성-원칙.md",
     "notes/Jackson.md",
     "notes/구글 프롬프트 엔지니어링 백서.md",
     "notes/결합도와-단일-책임.md",
@@ -207,7 +208,6 @@
     "hubs/testing.md",
     "notes/sql 로그 남기기.md",
     "notes/REST API 설계.md",
-    "notes/Scope Function run, with, let, apply, also.md",
     "무제 1.base",
     "무제 2.base",
     "무제.base",
