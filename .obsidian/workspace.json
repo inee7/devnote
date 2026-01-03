@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/옵시디언 잘쓰기.md",
+                "file": "notes/백엔드.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "옵시디언 잘쓰기"
+              "title": "백엔드"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#jpa",
+                "query": "/book",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "북마크"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -180,21 +181,26 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "0177aad870cb7680",
+  "active": "e5e2479269bc8c49",
   "lastOpenFiles": [
-    "notes/최범균주니어.md",
+    "notes/백엔드-운영-주의사항.md",
+    "notes/분산-캐시-운영-가이드.md",
+    "notes/백엔드-보안-체크리스트.md",
     "hubs/백엔드.md",
     "hubs/devops.md",
+    "notes/성능-최적화-전략.md",
+    "hubs/oop.md",
+    "hubs/kotlin.md",
+    "hubs/디자인패턴.md",
+    "inbox/옵시디언 잘쓰기.md",
+    "notes/최범균주니어.md",
     "notes/서버-관리-명령어.md",
     "notes/논블로킹-IO.md",
     "notes/동시성-제어-전략.md",
     "notes/메시징-시스템-선택-가이드.md",
     "notes/외부-서비스-연동-패턴.md",
-    "notes/성능-최적화-전략.md",
-    "inbox/옵시디언 잘쓰기.md",
     "inbox/무제.md",
     "notes/OSIV.md",
-    "hubs/디자인패턴.md",
     "notes/디자인패턴-합성.md",
     "notes/디자인패턴-브리지.md",
     "notes/디자인패턴-반복자.md",
@@ -203,11 +209,6 @@
     "notes/디자인패턴-해석기.md",
     "notes/디자인패턴-중개인.md",
     "notes/디자인패턴-기억.md",
-    "notes/디자인패턴-방문자.md",
-    "notes/디자인패턴-템플릿-메서드.md",
-    "notes/디자인패턴-관찰자.md",
-    "notes/디자인패턴-팩토리-메서드.md",
-    "notes/디자인패턴-싱글톤.md",
     "resources/images/observer-pattern-05.png",
     "hubs",
     "무제.base",
