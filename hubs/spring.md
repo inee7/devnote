@@ -13,7 +13,7 @@ tags: [자동생성]
 
 ## 설계 / 판단
 - [[스프링부트 로깅]]
-- [[spring-boot-starter-json의 jackson 기본 설정]]
+- [[Jackson]] - Spring Boot의 Jackson 기본 설정 포함
 
 ## 활용
 - [[retrofit2를 springboot+kotlin 에서 사용하기]]

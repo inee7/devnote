@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/백엔드.md",
+                "file": "notes/논블로킹-IO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "백엔드"
+              "title": "논블로킹-IO"
             }
           }
         ]
@@ -53,8 +53,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "/book",
-                "matchingCase": false,
+                "query": "",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -74,8 +74,7 @@
               "title": "북마크"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,42 +180,42 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "e5e2479269bc8c49",
+  "active": "0177aad870cb7680",
   "lastOpenFiles": [
-    "notes/백엔드-운영-주의사항.md",
-    "notes/분산-캐시-운영-가이드.md",
-    "notes/백엔드-보안-체크리스트.md",
-    "hubs/백엔드.md",
-    "hubs/devops.md",
-    "notes/성능-최적화-전략.md",
-    "hubs/oop.md",
-    "hubs/kotlin.md",
-    "hubs/디자인패턴.md",
-    "inbox/옵시디언 잘쓰기.md",
-    "notes/최범균주니어.md",
-    "notes/서버-관리-명령어.md",
-    "notes/논블로킹-IO.md",
-    "notes/동시성-제어-전략.md",
+    "notes/Jackson.md",
+    "notes/구글 프롬프트 엔지니어링 백서.md",
+    "notes/결합도와-단일-책임.md",
     "notes/메시징-시스템-선택-가이드.md",
-    "notes/외부-서비스-연동-패턴.md",
-    "inbox/무제.md",
-    "notes/OSIV.md",
-    "notes/디자인패턴-합성.md",
-    "notes/디자인패턴-브리지.md",
-    "notes/디자인패턴-반복자.md",
-    "notes/디자인패턴-상태.md",
-    "notes/디자인패턴-책임-사슬.md",
-    "notes/디자인패턴-해석기.md",
-    "notes/디자인패턴-중개인.md",
-    "notes/디자인패턴-기억.md",
+    "hubs/gc.md",
+    "notes/GC-가비지-컬렉션.md",
+    "notes/클로드 mcp에서 skills로.md",
+    "notes/코틀린에서 제약 처리.md",
+    "notes/테스트더블.md",
+    "notes/클로저란.md",
+    "notes/테스트의 종류.md",
+    "notes/CORS.md",
+    "notes/파티션.md",
+    "notes/API requestresponse 로깅.md",
+    "notes/DDD-도메인-주도-설계.md",
+    "notes/DRY 잘못된 적용으로 깨지는 SRP.md",
+    "notes/finally close - use 로 간단히.md",
+    "notes/Full GC 잦을때.md",
+    "notes/GC 과정.md",
+    "notes/GC 종류.md",
+    "inbox/HikariCP Pool size 고려할 부분.md",
+    "notes/Int.() - Unit 과 Int - Unit 차이.md",
+    "hubs/testing.md",
+    "notes/sql 로그 남기기.md",
+    "notes/REST API 설계.md",
+    "notes/Scope Function run, with, let, apply, also.md",
+    "무제 1.base",
+    "무제 2.base",
+    "무제.base",
     "resources/images/observer-pattern-05.png",
     "hubs",
-    "무제.base",
-    "무제 1.base",
     "inbox",
     "memo",
     "무제.canvas",
-    "무제 2.base",
     "resources/images/conditional-branching-example.jpg",
     "resources/images/kotlin-value-class-compiled.png",
     "resources/images/kotlin-jvminline-value-class.png",
