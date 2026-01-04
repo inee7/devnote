@@ -1,8 +1,4 @@
----
-tags: [자동생성]
----
-
-# DevOps & Infrastructure
+# DevOps
 
 ## 핵심 개념
 - [[Docker]]
