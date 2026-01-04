@@ -1,5 +1,8 @@
-# Docker
+---
+tags: [docker, container]
+---
 
+# Docker
 
 ## docker와 vm의 차이
 docker는 프로세스를 가상화해서 가벼움 하이퍼바이저 오버헤드가 줄어 훨씬 좋은 성능
@@ -38,5 +41,3 @@ COPY의 경우 호스트OS에서 컨테이너 안으로 복사만 가능하지�
 
 WORKDIR
 WORKDIR은 명령을 실행하기 위한 디렉토리를 지정 합니다.
-
-#docker

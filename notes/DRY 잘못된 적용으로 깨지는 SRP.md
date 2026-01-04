@@ -103,4 +103,3 @@ class MembershipPrice(val amount: Money)
 **출처**
 - 내 코드가 그렇게 이상한가요 (마츠오카 켄타로), 11장
 
-#oop #dry #srp #design

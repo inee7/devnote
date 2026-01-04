@@ -187,4 +187,3 @@ fetch('https://api.example.com/users', {
 - [[API requestresponse 로깅]]
 - [[Spring Boot 테스트 전략과 테스트 더블]]
 
-#cors #security #web

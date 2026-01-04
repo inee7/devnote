@@ -1,3 +1,7 @@
+---
+tags: [kotlin, extension-function, lambda, function-signature]
+---
+
 # Int.() -> Unit 과 Int -> Unit 차이 
 
 `int.() -> Unit`와 `Int -> Unit`는 Kotlin에서 서로 다른 함수 시그니처(signature)를 나타냅니다.
@@ -29,5 +33,3 @@
    ```
 
 따라서 `int.() -> Unit`은 확장 함수이고, `Int -> Unit`은 일반적인 함수를 나타냅니다. 전자는 수신 객체에 직접 접근할 수 있지만, 후자는 매개변수를 통해 값을 받습니다.
-
-#kotlin

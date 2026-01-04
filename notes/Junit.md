@@ -1,3 +1,7 @@
+---
+tags: [test, unit-test, mocking, kotlin, junit, mockk, assertj]
+---
+
 # JUnit + MockK + AssertJ 통합 가이드
 ---
 
@@ -756,4 +760,3 @@ class OrderTest {
 
 > Expected amount > 10000 but was 9000
 
-#testcode #테스트코드 

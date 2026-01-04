@@ -1,3 +1,7 @@
+---
+tags: [jpa, entity-manager, persistence-context]
+---
+
 # entityManager 모방 코드 
 
 ```kotlin
@@ -61,5 +65,3 @@ fun main() {
     entityManager.printPersistenceContext()
 }
 ```
-
-#jpa 
