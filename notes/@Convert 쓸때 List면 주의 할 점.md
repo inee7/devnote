@@ -103,3 +103,6 @@ public class Article {
 - Converter 구현 시 null 처리 필수
 
 ## 관련 노트
+
+- [[JPA-영속성-관리]] - 변경 감지(Dirty Checking) 원리
+- [[JPA-엔티티-매핑]] - @Embeddable과 값 타입 불변성
