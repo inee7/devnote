@@ -154,6 +154,6 @@ public void addPoints(List<Long> ids, int amount) {
 - [[@Transactional]]
 - [[JPA원리]]
 - [[영속성컨텍스트]]
-- [[JPA 성능최적화]]
+- [[JPA-성능-최적화]]
 
 #jpa #spring-data-jpa #bulk-operation

@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a29a6dec19ef36c2",
+        "id": "0904f53fc2fe71eb",
         "type": "tabs",
         "children": [
           {
-            "id": "0177aad870cb7680",
+            "id": "04a6798ce408bb03",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "notes/코틀린 레일웨이 프로그래밍.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "코틀린 레일웨이 프로그래밍"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#book/이펙티브코틀린",
+                "query": "\"@Convert \"",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,8 +74,7 @@
               "title": "북마크"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -177,37 +180,37 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "0177aad870cb7680",
+  "active": "01816f5c5a68bf86",
   "lastOpenFiles": [
-    "notes/리시버를 명시적으로 참조하라.md",
-    "notes/null-안전-처리.md",
-    "notes/표준-오류-사용.md",
-    "notes/리시버-명시적-참조.md",
-    "notes/변수-스코프-최소화.md",
-    "notes/가변성-제한.md",
-    "notes/사용자 정의 오류보다 표준오류로.md",
-    "notes/아이템1 가변성을 제한하라.md",
-    "notes/아이템2 변수의 스코프를 최소화하라.md",
-    "notes/적절하게 null을 처리 하라.md",
-    "notes/코틀린-함수와-확장.md",
-    "notes/게터는 스마트캐스트 할 수 없다.md",
-    "notes/리터럴함수란.md",
-    "notes/모든 예외는 unchecked이다.md",
-    "notes/무인자생성자 없어도 역직렬화.md",
-    "notes/스코프 최소화.md",
-    "notes/코틀린에서 상수는.md",
-    "notes/코틀린에서 제약 처리.md",
-    "notes/finally close - use 로 간단히.md",
-    "notes/retrofit2를 springboot+kotlin 에서 사용하기.md",
-    "notes/Scope Function run, with, let, apply, also.md",
-    "notes/Sealed Class (enum의 제약보완).md",
-    "notes/try-catch-finally 순서.md",
+    "notes/레일웨이-프로그래밍.md",
+    "notes/조건분기.md",
+    "notes/코틀린 레일웨이 프로그래밍.md",
+    "notes/외부-서비스-연동-패턴.md",
+    "notes/싱글톤 코딩.md",
+    "notes/슬라이스 테스트.md",
+    "notes/스프링부트와 스프링프레임워크 관계.md",
+    "notes/스프링이벤트.md",
+    "notes/스프링부트 로깅.md",
+    "notes/동시성-제어-전략.md",
+    "DDD_WHAT_WHY.md",
     "코틀린-6장-타입.md",
-    "notes/논블로킹-IO.md",
-    "notes/JPA-성능-최적화.md",
+    "영속성컨텍스트.md",
+    "JPA원리.md",
+    "GEMINI.md",
+    "CLAUDE.md",
     "무제 1.base",
     "무제 2.base",
     "무제.base",
+    "notes/val을 var로 오버라이드 가능.md",
+    "notes/try-catch-finally 순서.md",
+    "notes/sql 로그 남기기.md",
+    "notes/Spring에서 Redis 분산 락 적용하기 (Redisson 사용).md",
+    "notes/Spring Boot 테스트 전략과 테스트 더블.md",
+    "notes/Sealed Class (enum의 제약보완).md",
+    "notes/Scope Function run, with, let, apply, also.md",
+    "notes/REST API 설계.md",
+    "notes/QueryDSL.md",
+    "notes/OSIV.md",
     "resources/images/observer-pattern-05.png",
     "hubs",
     "inbox",

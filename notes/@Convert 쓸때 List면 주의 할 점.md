@@ -104,8 +104,5 @@ public class Article {
 
 ## 관련 노트
 
-- [[JPA원리]]
-- [[영속성컨텍스트]]
-- [[entitymanager 모방코드]]
 
 #jpa #attributeconverter #dirty-checking
