@@ -11,14 +11,10 @@
             "id": "0177aad870cb7680",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/논블로킹-IO.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "논블로킹-IO"
+              "title": "새 탭"
             }
           }
         ]
@@ -53,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#book/이펙티브코틀린",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +70,8 @@
               "title": "북마크"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -182,32 +179,32 @@
   },
   "active": "0177aad870cb7680",
   "lastOpenFiles": [
-    "notes/JPA-성능-최적화.md",
-    "notes/객체지향-설계-원칙.md",
-    "notes/테스트-작성-원칙.md",
-    "notes/Jackson.md",
-    "notes/구글 프롬프트 엔지니어링 백서.md",
-    "notes/결합도와-단일-책임.md",
-    "notes/메시징-시스템-선택-가이드.md",
-    "hubs/gc.md",
-    "notes/GC-가비지-컬렉션.md",
-    "notes/클로드 mcp에서 skills로.md",
+    "notes/리시버를 명시적으로 참조하라.md",
+    "notes/null-안전-처리.md",
+    "notes/표준-오류-사용.md",
+    "notes/리시버-명시적-참조.md",
+    "notes/변수-스코프-최소화.md",
+    "notes/가변성-제한.md",
+    "notes/사용자 정의 오류보다 표준오류로.md",
+    "notes/아이템1 가변성을 제한하라.md",
+    "notes/아이템2 변수의 스코프를 최소화하라.md",
+    "notes/적절하게 null을 처리 하라.md",
+    "notes/코틀린-함수와-확장.md",
+    "notes/게터는 스마트캐스트 할 수 없다.md",
+    "notes/리터럴함수란.md",
+    "notes/모든 예외는 unchecked이다.md",
+    "notes/무인자생성자 없어도 역직렬화.md",
+    "notes/스코프 최소화.md",
+    "notes/코틀린에서 상수는.md",
     "notes/코틀린에서 제약 처리.md",
-    "notes/테스트더블.md",
-    "notes/클로저란.md",
-    "notes/테스트의 종류.md",
-    "notes/CORS.md",
-    "notes/파티션.md",
-    "notes/API requestresponse 로깅.md",
-    "notes/DDD-도메인-주도-설계.md",
-    "notes/DRY 잘못된 적용으로 깨지는 SRP.md",
     "notes/finally close - use 로 간단히.md",
-    "notes/Full GC 잦을때.md",
-    "notes/GC 과정.md",
-    "notes/GC 종류.md",
-    "inbox/HikariCP Pool size 고려할 부분.md",
-    "notes/Int.() - Unit 과 Int - Unit 차이.md",
-    "hubs/testing.md",
+    "notes/retrofit2를 springboot+kotlin 에서 사용하기.md",
+    "notes/Scope Function run, with, let, apply, also.md",
+    "notes/Sealed Class (enum의 제약보완).md",
+    "notes/try-catch-finally 순서.md",
+    "코틀린-6장-타입.md",
+    "notes/논블로킹-IO.md",
+    "notes/JPA-성능-최적화.md",
     "무제 1.base",
     "무제 2.base",
     "무제.base",
