@@ -1,3 +1,7 @@
+---
+tags: [kotlin, data-class, jackson, deserialization]
+---
+
 # Kotlin Data Class와 Jackson 역직렬화 동작 정리
 
 Jackson을 Kotlin에서 사용할 때 가장 많이 쓰는 대상은 `data class`입니다.  

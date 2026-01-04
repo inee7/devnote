@@ -1,3 +1,7 @@
+---
+tags: [db, mysql, performance, transaction, innodb, redo-log]
+---
+
 # 대용량 CUD시 주의 checkpoint
 
 CUD 작업이 일어나면 디스크에서 메모리(버퍼풀)로 데이터를 올려서 작업을하고 디스크에는 redo log(복구를 위함)를 쌓는다 
@@ -13,5 +17,3 @@ innoDB가 redo log가 과하게 쌓이거나 checkpoint age가 길었다고 치�
 그리고 
 강제플러싱도 할수 없이 너무 큰 규모라면 redo log 파일의 크기는 정해져있으며 꽉 차면 더이상 새로운 CUD작업을 하지 못하고 셧다운된다  
 장애시 redo log가 너무 크면 복구 시간도 매우 길어진다 
-
-#db #mysql

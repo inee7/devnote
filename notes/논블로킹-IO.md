@@ -1,5 +1,5 @@
 ---
-tags: [논블로킹IO, 이벤트루프, 리액터, 성능최적화, 백엔드]
+tags: [non-blocking-io, event-loop, reactor, performance-optimization, backend]
 ---
 
 ## 한 줄 요약
