@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/조건분기.md",
-                "mode": "source",
+                "file": "notes/레일웨이-패턴-Java-구현.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "조건분기"
+              "title": "레일웨이-패턴-Java-구현"
             }
           }
         ]
@@ -182,10 +182,11 @@
   },
   "active": "04a6798ce408bb03",
   "lastOpenFiles": [
-    "notes/레일웨이-패턴-Java-구현.md",
-    "notes/레일웨이-프로그래밍.md",
     "notes/레일웨이-패턴-Kotlin-구현.md",
+    "notes/리시버-명시적-참조.md",
+    "notes/레일웨이-패턴-Java-구현.md",
     "notes/조건분기.md",
+    "notes/레일웨이-프로그래밍.md",
     "notes/코틀린 레일웨이 프로그래밍.md",
     "notes/외부-서비스-연동-패턴.md",
     "notes/싱글톤 코딩.md",
@@ -210,7 +211,6 @@
     "notes/Spring Boot 테스트 전략과 테스트 더블.md",
     "notes/Sealed Class (enum의 제약보완).md",
     "notes/Scope Function run, with, let, apply, also.md",
-    "notes/REST API 설계.md",
     "resources/images/observer-pattern-05.png",
     "hubs",
     "inbox",
