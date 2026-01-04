@@ -182,6 +182,7 @@
   },
   "active": "0177aad870cb7680",
   "lastOpenFiles": [
+    "notes/JPA-성능-최적화.md",
     "notes/객체지향-설계-원칙.md",
     "notes/테스트-작성-원칙.md",
     "notes/Jackson.md",
@@ -207,7 +208,6 @@
     "inbox/HikariCP Pool size 고려할 부분.md",
     "notes/Int.() - Unit 과 Int - Unit 차이.md",
     "hubs/testing.md",
-    "notes/sql 로그 남기기.md",
     "무제 1.base",
     "무제 2.base",
     "무제.base",
