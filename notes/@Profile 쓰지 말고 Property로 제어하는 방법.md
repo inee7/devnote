@@ -1,5 +1,5 @@
 ---
-tags: [spring, configuration, best-practice]
+tags: [spring, configuration, best-practice, conditional]
 ---
 
 # @Profile 쓰지 말고 Property로 제어하는 방법
@@ -178,4 +178,3 @@ class ServiceTest {
 - [[@ConfigurationProperties]]
 - [[스프링부트와 스프링프레임워크 관계]]
 
-#spring #configuration #conditional

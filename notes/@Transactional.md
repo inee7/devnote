@@ -82,5 +82,3 @@ Spring은 내부적으로 트랜잭션 정보를 **ThreadLocal** 변수에 저�
 
 - [[JPA원리]]
 - [[@Modifying]]
-
-#spring #transaction

@@ -139,5 +139,3 @@ public class AppProperties {
 
 - [[스프링부트와 스프링프레임워크 관계]]
 - [[@Profile 쓰지 말고 Property로 제어하는 방법]]
-
-#spring #configuration

@@ -1,5 +1,5 @@
 ---
-tags: [jpa, hibernate, attributeconverter]
+tags: [jpa, hibernate, attributeconverter, dirty-checking]
 ---
 
 # @Convert 쓸때 List면 주의 할 점
@@ -103,6 +103,3 @@ public class Article {
 - Converter 구현 시 null 처리 필수
 
 ## 관련 노트
-
-
-#jpa #attributeconverter #dirty-checking

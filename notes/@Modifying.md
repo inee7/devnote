@@ -1,5 +1,5 @@
 ---
-tags: [jpa, spring-data-jpa, query]
+tags: [jpa, spring-data-jpa, query, bulk-operation]
 ---
 
 # @Modifying
@@ -156,4 +156,3 @@ public void addPoints(List<Long> ids, int amount) {
 - [[영속성컨텍스트]]
 - [[JPA-성능-최적화]]
 
-#jpa #spring-data-jpa #bulk-operation
