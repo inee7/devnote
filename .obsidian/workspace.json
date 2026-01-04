@@ -41,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "파일 탐색기"
@@ -180,9 +180,10 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "01816f5c5a68bf86",
+  "active": "04a6798ce408bb03",
   "lastOpenFiles": [
     "notes/레일웨이-프로그래밍.md",
+    "notes/레일웨이-패턴-Kotlin-구현.md",
     "notes/조건분기.md",
     "notes/코틀린 레일웨이 프로그래밍.md",
     "notes/외부-서비스-연동-패턴.md",
@@ -210,7 +211,6 @@
     "notes/Scope Function run, with, let, apply, also.md",
     "notes/REST API 설계.md",
     "notes/QueryDSL.md",
-    "notes/OSIV.md",
     "resources/images/observer-pattern-05.png",
     "hubs",
     "inbox",

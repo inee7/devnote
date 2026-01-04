@@ -29,7 +29,7 @@ tags: [kotlin, railway-oriented-programming, result, error-handling, functional-
 - 컴파일 타임에 오류 처리 강제
 - 함수 조합 용이
 
-## 상세 내용
+ ## 상세 내용
 
 ### 기존 예외 처리의 문제점
 

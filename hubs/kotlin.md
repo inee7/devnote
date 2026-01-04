@@ -22,7 +22,7 @@
 
 ## 고급 기능
 
-- [[레일웨이-프로그래밍]] - Railway Oriented Programming, Result 체이닝
+- [[레일웨이-패턴-Kotlin-구현]] - Railway Oriented Programming, Result 체이닝
 - [[코틀린에서 상수는]]
 - [[코틀린에서 제약 처리]]
 
