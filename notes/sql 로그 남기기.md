@@ -1,3 +1,7 @@
+---
+tags: [jpa, log, sql, hibernate, logging, spring-boot]
+---
+
 # sql 로그 옵션
 
 ## 하이버네이트 로그 
@@ -145,5 +149,3 @@ spring:
 - **`spring.jpa.properties.hibernate`**: Hibernate의 모든 세부 설정을 제어할 수 있는 옵션.
 
 일반적으로, Spring Boot의 기본 설정을 활용하면서 필요한 경우 `spring.jpa.hibernate`를 사용하고, 더 세부적인 제어가 필요할 때 `spring.jpa.properties.hibernate`를 사용하는 것이 좋습니다.
-
-#jpa #log 

@@ -1,3 +1,7 @@
+---
+tags: [jpa, lock, optimistic-lock, pessimistic-lock, transaction, concurrency, database]
+---
+
 # Lock
 
 
@@ -86,6 +90,3 @@ SELECT balance FROM tb_account  WHERE id = 1 FOR UPDATE # 5.7;
 SELECT balance FROM tb_account  WHERE id = 1 FOR UPDATE # 8.0;
 ```
 하지만 샘플코드로 FOR UPDATE쿼리로 락을 걸었을때 UPDATE, DELETE는 대기상태로 들어가지만 SELECT쿼리는 수행이된다. 좀 더 조사해보니 FOR UPDATE가 붙은 SELECT쿼리만 동시성이 보장되고 일반적인 SELECT 쿼리를 날렸을 때는 따로 락이 걸리진 않는다. 하지만 그 트랜잭션안에서 update가 발생되면 그 update쿼리는 락이 걸린다.
-
-
-#jpa 

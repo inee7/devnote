@@ -1,3 +1,7 @@
+---
+tags: [kotlin, scope-function, functional-programming, extension-function]
+---
+
 # Scope Function: run, with, let, apply, also
 
 ![[resources/images/scope-function-table.png]]
@@ -12,5 +16,3 @@ data class Mail(private var _message:String?=null) {
 ```
 
 https://hyeon9mak.github.io/using-kotlin-scope-function-correctly/
-
-#kotlin

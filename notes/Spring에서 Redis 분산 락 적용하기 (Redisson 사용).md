@@ -1,4 +1,8 @@
 
+---
+tags: [spring, redis, distributed-lock, redisson, concurrency, lock]
+---
+
 ## 분산 락(Distributed Lock)이란?
 
 - 다중 스레드 환경에서, 어떤 자원에 대해 동시에 접근 가능한 스레드가 단 한 개만 되도록 강제하는 것을 Lock (혹은 Mutex, 상호 배제)이라고 한다.
@@ -160,4 +164,3 @@ val result: List<ResultDto> = redisLockService.tryLockWith(lockName = model.cust
 
 출저 : https://velog.io/@profoundsea25/Spring에서-Redis-분산-락-적용하기-Redisson-사용
 
-#spring #redis

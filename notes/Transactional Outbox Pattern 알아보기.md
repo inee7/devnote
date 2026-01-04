@@ -1,5 +1,7 @@
+---
+tags: [kafka, event, transactional-outbox, distributed-system, microservice, cdc]
+---
 # Transactional Outbox Pattern 알아보기
-#kafka #이벤트
 ![[resources/images/transactional-outbox-01.png]]
 
 *메시지를 DB 트랜잭션과 묶어서 커밋하여 비동기적으로 메시지 브로커에게 전달하는 패턴*

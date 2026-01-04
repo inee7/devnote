@@ -1,3 +1,7 @@
+---
+tags: [kotlin, inheritance, override, property]
+---
+
 # val을 var로 오버라이드 가능 
 
 ``` kotlin
@@ -9,5 +13,3 @@ class AElement: Element {
 	override var active: Boolean = false 
 }
 ```
-
-#kotlin

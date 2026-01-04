@@ -1,3 +1,7 @@
+---
+tags: [spring, retrofit2, kotlin, http-client, rest-client, external-api]
+---
+
 # retrofit2를 springboot+kotlin 에서 사용하기
 
 ```kotlin
@@ -27,4 +31,3 @@ Retrofit retrofit = new Retrofit.Builder().addConverterFactory(GsonConverterFact
 
 response.code() Integer 값이 200 미만이거나 300이상 혹은 204나 205일 경우에는 response.body()는 null이 되고 response.errorBody() 를 byteArray로 받아서 파싱해주자
 
-#spring #retrofit2 #kotlin

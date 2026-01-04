@@ -1,4 +1,8 @@
 
+---
+tags: [mysql, sql, performance, index, like-operator, full-text-search]
+---
+
 ## LIKE 검색
 데이터를 조회할 때 특정 단어가 들어 있는 데이터를 검색하기 위해 LIKE 검색을 사용한다. LIKE 검색은 상당히 편리하지만 대용량 테이블인 경우에는 위험하다. LIKE 검색은 ‘%’ 문자 위치에 따라 다르게 수행된다. [col LIKE ‘abc%’] 이면 abc로 시작하는 문자를 조회한다. [col LIKE ‘%abc%’]이면 abc를 포함한 데이터를 가져온다. 그리고 [col LIKE ‘abc’]는 abc로 끝나는 데이터를 가져온다. LIKE 검색 시 ‘%’ 위치에 따라서는 컬럼에 해당 인덱스가 있을지라도 의미가 없을 수도 있으니 SQL 작성 시 유의해야 한다.
 
@@ -77,7 +81,3 @@ LIKE 검색을 별생각 없이 사용하다 보면 DBMS 성능이 전체적으�
 컨텐츠 내용과 같이 사용자가 쓰기 나름인 데이터를 토큰 단위로 쪼개서 검색에 용이하게 합니다.
 컨텐츠 내용 : "나는 오늘 seoul의 sky를 바라보면서 베스킨라빈스31에서 맛있는 요리를 먹었다! 정말 기분 좋았다." 와 같이 한글, 영어, 숫자가 섞여 있거나 긴 내용을 검색할 때 사용됩니다.
 출처:  [https://interconnection.tistory.com/95](https://interconnection.tistory.com/95)  [Ryan Server]
-
-, MATCH AGAINST 써서
-
-#mysql 

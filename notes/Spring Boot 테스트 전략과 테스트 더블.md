@@ -162,4 +162,3 @@ assertEquals(5, result);
 - [[@Transactional]]
 - [[단일 책임 원칙]]
 
-#spring #test #junit
