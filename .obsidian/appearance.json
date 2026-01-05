@@ -4,5 +4,7 @@
   "monospaceFontFamily": "D2Coding",
   "baseFontSize": 21,
   "accentColor": "#8bd6ee",
-  "translucency": false
+  "translucency": false,
+  "textFontFamily": "Pretendard",
+  "interfaceFontFamily": "Pretendard,Apple SD Gothic Neo"
 }

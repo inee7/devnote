@@ -19,7 +19,7 @@
 
 ## 성능 최적화
 
-- [[JPA-API-최적화]] - N+1 문제, Fetch Join, BatchSize, DTO 직접 조회
+- [[JPA-성능-최적화]] - N+1 문제, Fetch Join, BatchSize, DTO 직접 조회
 
 ## 주의사항
 

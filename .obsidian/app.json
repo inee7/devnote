@@ -3,5 +3,6 @@
   "showInlineTitle": false,
   "attachmentFolderPath": "이미지",
   "spellcheck": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "showLineNumber": false
 }

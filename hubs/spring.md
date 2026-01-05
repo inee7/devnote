@@ -6,6 +6,8 @@
 - [[@ConfigurationProperties]]
 - [[@Profile 쓰지 말고 Property로 제어하는 방법]]
 - [[Spring에서 Redis 분산 락 적용하기 (Redisson 사용)]]
+- [[필터와 인터셉터]]
+- [[JSR303 유효성검사]]
 
 ## 설계 / 판단
 - [[스프링부트 로깅]]

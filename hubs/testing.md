@@ -1,5 +1,9 @@
 # Testing
 
+## 테스트 전략
+
+- [[Spring Boot 테스트 전략과 테스트 더블]]
+
 ## 핵심 개념
 - [[테스트-작성-원칙]] - F.I.R.S.T 원칙, 4가지 품질 조건
 - [[테스트의 종류]] - Unit, Slice, Integration, E2E
