@@ -388,8 +388,3 @@ dependencies {
 - [이터너티님의 Domain Driven Design](http://aeternum.egloos.com/category/Domain-Driven%20Design)
 - [이일민(토비)님의 스프링 프레임워크와 DDD](http://www.dbguide.net/knowledge.db?cmd=view&boardUid=127395)
 
-## 관련 노트
-
-- [[단일-책임-원칙]]
-- [[결합도와-단일-책임]]
-- [[Transactional Outbox Pattern 알아보기]]

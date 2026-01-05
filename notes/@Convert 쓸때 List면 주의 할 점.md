@@ -102,7 +102,4 @@ public class Article {
 - 동시성: 멀티스레드 환경에서는 불변 컬렉션 사용 권장
 - Converter 구현 시 null 처리 필수
 
-## 관련 노트
 
-- [[JPA-영속성-관리]] - 변경 감지(Dirty Checking) 원리
-- [[JPA-엔티티-매핑]] - @Embeddable과 값 타입 불변성

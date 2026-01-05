@@ -94,9 +94,6 @@ class MembershipPrice(val amount: Money)
 // 각각 다른 정책으로 변경될 가능성이 있음
 ```
 
-## 관련 노트
-
-- [[단일 책임 원칙]]
 
 ---
 

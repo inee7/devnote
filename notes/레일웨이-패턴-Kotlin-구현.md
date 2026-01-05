@@ -702,8 +702,3 @@ class TransactionService(
 - [Railway Oriented Programming (F# for fun and profit)](https://fsharpforfunandprofit.com/rop/)
 - [Arrow-kt Documentation](https://arrow-kt.io/)
 
-## 관련 노트
-
-- [[코틀린-타입-시스템]]
-- [[코틀린-고차함수]]
-- [[모든 예외는 unchecked이다]]

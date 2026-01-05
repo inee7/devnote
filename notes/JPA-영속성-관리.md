@@ -389,14 +389,7 @@ class MemberService(
 - IDENTITY 전략은 Batch Insert 불가하므로 Sequence 권장
 - 1차 캐시는 트랜잭션 범위이므로 애플리케이션 레벨 캐시 별도 고려
 
-## 관련 노트
 
-- [[JPA-엔티티-매핑]] - 엔티티의 기본 매핑과 생명주기
-- [[JPA-연관관계-매핑]] - 연관관계의 영속성 관리와 Fetch 전략
-- [[@Transactional]] - 트랜잭션과 영속성 컨텍스트의 범위
-- [[OSIV]] - 영속성 컨텍스트의 생명주기 전략
-- [[@Modifying]] - 벌크 연산과 영속성 컨텍스트 불일치
-- [[JPA-Spring-Data-JPA]] - Spring Data JPA의 영속성 관리
 
 ---
 

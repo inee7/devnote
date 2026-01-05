@@ -135,7 +135,3 @@ public class AppProperties {
 - setter 방식은 런타임에 값이 변경될 수 있으므로 불변성이 필요하면 생성자 바인딩 권장
 - `spring-boot-configuration-processor` 의존성 추가 시 IDE에서 자동완성 지원
 
-## 관련 노트
-
-- [[스프링부트와 스프링프레임워크 관계]]
-- [[@Profile 쓰지 말고 Property로 제어하는 방법]]

@@ -157,8 +157,4 @@ assertEquals(5, result);
 3. **계층별 검증**: `@WebMvcTest`, `@DataJpaTest` 슬라이스 테스트
 4. **주요 시나리오**: 통합 테스트로 end-to-end 검증
 
-## 관련 노트
-
-- [[@Transactional]]
-- [[단일 책임 원칙]]
 

@@ -162,10 +162,7 @@ val result: List<ResultDto> = redisLockService.tryLockWith(lockName = model.cust
         { inventoryAssignService.assignInventory(model, requestDto) }
 ```
 
-## 관련 노트
 
-- [[동시성-제어-전략]] - 분산 락을 포함한 동시성 제어 전략 전반
-- [[Lock]] - DB 락과의 비교
 
 출저 : https://velog.io/@profoundsea25/Spring에서-Redis-분산-락-적용하기-Redisson-사용
 

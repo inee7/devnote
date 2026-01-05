@@ -23,9 +23,3 @@ OSIV를 키면 (디폴트 ON) @Tansaction 메소드 부터 DB 커넥션이 이�
   - OrderService: 핵심 비즈니스 로직
   - OrderQueryService: 화면이나 API에 맞춘 서비스 (주로 [[@Transactional]](readOnly = true) 사용)
 
-
-## 관련 노트
-
-- [[JPA-영속성-관리]] - 영속성 컨텍스트의 생명주기
-- [[JPA-API-최적화]] - OSIV와 성능 최적화
-- [[@Transactional]] - 트랜잭션 범위와 OSIV

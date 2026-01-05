@@ -173,8 +173,4 @@ class ServiceTest {
 
 [Don't Use Spring @Profile Annotation](https://reflectoring.io/dont-use-spring-profile-annotation/)
 
-## 관련 노트
-
-- [[@ConfigurationProperties]]
-- [[스프링부트와 스프링프레임워크 관계]]
 

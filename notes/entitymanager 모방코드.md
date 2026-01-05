@@ -65,7 +65,3 @@ fun main() {
     entityManager.printPersistenceContext()
 }
 ```
-
-## 관련 노트
-
-- [[JPA-영속성-관리]] - EntityManager와 영속성 컨텍스트 상세 설명

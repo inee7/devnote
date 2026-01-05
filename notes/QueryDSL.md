@@ -735,10 +735,6 @@ class MemberRepositoryImpl(
 - 페이징 필수 (대용량 데이터 처리)
 - FROM 절 서브쿼리 불가 시 Native Query 고려
 
-## 관련 노트
-
-- [[JPA-Spring-Data-JPA]] - Spring Data JPA와 QueryDSL 통합
-- [[JPA-API-최적화]] - 동적 쿼리와 DTO 조회 최적화
 
 ---
 

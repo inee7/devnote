@@ -149,10 +149,5 @@ public void addPoints(List<Long> ids, int amount) {
    - `@LastModifiedDate` 등의 Auditing 기능이 작동하지 않음
    - 필요시 쿼리에 직접 명시
 
-## 관련 노트
 
-- [[@Transactional]]
-- [[JPA원리]]
-- [[영속성컨텍스트]]
-- [[JPA-성능-최적화]]
 

@@ -262,7 +262,3 @@ spring:
 - Apache Kafka Quickstart
 - Spring for Apache Kafka Reference
 
-## 관련 노트
-
-- [[Transactional Outbox Pattern 알아보기]]
-- [[스프링이벤트]]

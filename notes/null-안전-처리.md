@@ -480,7 +480,3 @@ fun processTransaction(transaction: Transaction) {
 **출처**
 - Effective Kotlin (마르친 모스칼라)
 
-## 관련 노트
-
-- [[코틀린-타입-시스템]]
-- [[적절하게 null을 처리 하라]]

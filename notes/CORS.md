@@ -182,8 +182,4 @@ fetch('https://api.example.com/users', {
 .allowedOrigins("https://frontend.com")  // * 불가
 ```
 
-## 관련 노트
-
-- [[API requestresponse 로깅]]
-- [[Spring Boot 테스트 전략과 테스트 더블]]
 

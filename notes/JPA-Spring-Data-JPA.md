@@ -567,13 +567,6 @@ interface MemberRepositoryCustom {
 - 복잡한 쿼리는 Native SQL보다 JPQL 선호 (DB 벤더 독립성)
 - DTO 변환으로 민감 정보 노출 방지
 
-## 관련 노트
-
-- [[JPA-영속성-관리]] - 영속성 컨텍스트와 Repository의 동작 원리
-- [[QueryDSL]] - 복잡한 동적 쿼리 작성
-- [[@Modifying]] - 벌크 연산과 영속성 컨텍스트
-- [[@Transactional]] - 트랜잭션 관리
-- [[JPA-API-최적화]] - 성능 최적화와 DTO 조회
 
 ---
 

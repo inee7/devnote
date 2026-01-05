@@ -703,8 +703,3 @@ fun findOrdersNative(): List<OrderDto>
 - 자바 ORM 표준 JPA 프로그래밍 (김영한)
 - 실전! 스프링 부트와 JPA 활용 2 (김영한)
 
-## 관련 노트
-
-- [[OSIV]]
-- [[영속성컨텍스트]]
-- [[JPA원리]]

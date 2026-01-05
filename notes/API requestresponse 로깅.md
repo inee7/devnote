@@ -154,7 +154,3 @@ protected boolean shouldNotFilter(HttpServletRequest request) {
 - Splunk
 
 request_id를 기준으로 요청 전체 흐름 추적 가능
-
-## 관련 노트
-
-- [[Spring Boot 테스트 전략과 테스트 더블]]
